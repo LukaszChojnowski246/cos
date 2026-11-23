@@ -1,0 +1,9 @@
+<?php
+
+abstract Class  Database {
+    $conn = mysqli_connect("localhost", "root", "", cos);
+}
+
+Class MySQLDB extends Database {
+
+}
