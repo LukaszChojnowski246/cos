@@ -1,9 +1,18 @@
 <?php
+    interface SqlInterface {
+        
+    }
+
 
 abstract Class  Database {
     $conn = mysqli_connect("localhost", "root", "", cos);
+    
+    $database = "CREATE DATABASE IF NOT EXISTS cos";
+    USE cos;
+    
 }
 
-Class MySQLDB extends Database {
+Class MySQLDB extends Database implements SqlInterface {
+
 
 }
